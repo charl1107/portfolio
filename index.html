@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Project Portfolio</title>
+    <meta
+      name="description"
+      content="A clean student portfolio website showcasing a first project output."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <a href="#home" class="brand">My Portfolio</a>
+        <div class="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#gallery">Screenshots</a>
+          <a href="#reflection">Reflection</a>
+        </div>
+      </nav>
+
+      <section id="home" class="hero-content">
+        <div class="hero-intro">
+          <p class="eyebrow">Student Portfolio</p>
+          <h1>Hi, Welcome to My Portfolio!</h1>
+          <p class="lead">
+            This portfolio presents my first completed project with a clear overview,
+            screenshots, and a reflection on what I learned.
+          </p>
+          <a href="#overview" class="button">Explore Project</a>
+        </div>
+        <div class="hero-side">
+          <img class="profile-photo" src="assets/profile-photo.jpg" alt="Student portrait" />
+          <div class="hero-card">
+            <h2>Student Information</h2>
+            <ul>
+              <li><strong>Name:</strong> Dominic Charl P. Mariano</li>
+              <li><strong>Program:</strong> Bachelor of Science in Computer Science</li>
+              <li><strong>School:</strong> Concepcion Holy Cross College Inc.</li>
+              <li><strong>Semester:</strong> 1st Semester</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="overview" class="section">
+        <div class="card">
+          <h3>Project Overview</h3>
+          <p>
+            This portfolio showcases my first project, which is a simple web application designed to demonstrate my skills in HTML, CSS, and JavaScript. The project includes a user-friendly interface, responsive design, and interactive features that enhance the user experience.
+          </p>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Screenshots of the Project Output</p>
+          <h2>Actual project screenshots</h2>
+        </div>
+        <div class="grid three-col">
+          <div class="card image-card">
+            <img src="assets/dashboard.png" alt="Screenshot of the dashboard view of the project" />
+            <h3>Windows View</h3>
+          </div>
+          <div class="card image-card mobile-preview-card">
+            <img class="mobile-preview" src="assets/mobile.png" alt="Screenshot of the mobile version of the project" />
+            <h3>Mobile View</h3>
+      </section>
+
+      <section id="reflection" class="section alt">
+        <div class="section-heading">
+          <p class="eyebrow">Reflection</p>
+          <h2>What I learned</h2>
+        </div>
+        <div class="card reflection-card">
+          <p>
+            Creating this project helped me understand the importance of planning, consistency,
+            and user-centered design. I learned how to organize content, improve readability,
+            and present ideas in a way that is easy for others to understand.
+          </p>
+          <p>
+            I also discovered that even a simple interface can make a meaningful difference when
+            it is thoughtfully designed. This experience has strengthened my confidence in building
+            future projects.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Dominic Charl Mariano • My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
